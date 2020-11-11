@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int targetx = r.Next(1001);
+            int targety = r.Next(1001);
+            for(int posX = 0; posX <= targetx; posX++)
+            {
+                if(posX == targetx)
+                {
+                    Console.WriteLine(posX);
+                }
+                }
+            for (int posY = 0; posY <= targety; posY++)
+            {
+                if(posY == targety)
+                {
+                    Console.WriteLine(posY);
+                }
+                {
+
+                }
+            }
+
+
+
+
+
+        }
+    }
+}
