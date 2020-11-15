@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int HP1 = r.Next(100, 201);
+            int HP2 = r.Next(100, 201);
+            int Power1 = r.Next(10, 51); 
+            int Power2 = r.Next(10, 51);
+           
+            
+            while (HP1 != 0 && HP2 !=0)
+            {
+                int damage1 = HP1 - Power2;
+                int damage2 = HP2 - Power1;
+                if (damage1 == 0)
+                {
+                    Console.WriteLine("P2 wins");
+
+                }
+                if (damage2 == 0)
+                {
+                    Console.WriteLine("P1 wins");
+
+                }
+            }
+            
+
+
+        }
+    }
+}

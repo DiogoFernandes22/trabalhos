@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int posX = r.Next(1, 501);
+            int posY = r.Next(1, 501);
+            if(posX < 250 && posY < 250)
+            {
+                Console.WriteLine("Player is on the top left");
+            }
+            else if(posX >250 && posY > 250)
+            {
+                Console.WriteLine("Player is on the bottom right");
+            }
+            if (posX < 250 && posY > 250)
+            {
+                Console.WriteLine("Player is on the bottom left");
+            }
+            else if(posX > 250 && posY < 250)
+            {
+                Console.WriteLine("Player is on the top right");
+            }
+            Console.WriteLine(posX);
+            Console.WriteLine(posY);
+        }
+    }
+}

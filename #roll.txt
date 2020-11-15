@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int P1roll = r.Next(1, 7);
+            int P2roll = r.Next(1, 7);
+            if(P1roll > P2roll)
+            {
+                Console.WriteLine("P1 won");
+            }
+            else
+            {
+                Console.WriteLine("P2 won");            }
+            while (P1roll == P2roll)
+            {
+                P1roll = r.Next(1, 7);
+                P2roll = r.Next(1, 7);
+            }
+            Console.WriteLine(P1roll);
+            Console.WriteLine(P2roll);
+        }
+        
+    }
+}
