@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp17
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int P1score = r.Next(101);
+            int P2score = r.Next(101);
+            int P3score = r.Next(101);
+            int maior1 = P1score;
+            int maior2 = P2score;
+            int maior3 = P3score;
+            if(P2score > maior1)
+            {
+                maior2 = maior1;
+                P2score = maior1;
+            }
+            if(P3score > maior1)
+            {
+                maior3 = maior2;
+                maior2 = maior1;
+                maior1 = P3score;
+            }
+            if (P3score > maior2)
+            {
+                maior3 = maior2;
+                
+                maior2 = P3score;
+            }
+            Console.WriteLine(maior1);
+            Console.WriteLine(maior2);
+            Console.WriteLine(maior3);
+           
+
+        }
+    }
+}
