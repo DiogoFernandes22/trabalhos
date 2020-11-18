@@ -17,11 +17,11 @@ namespace ConsoleApp16
             {
                 HP1 = HP1 - Power2;
                 HP2 = HP2 - Power1;
-                if(HP1 == 0)
+                if(HP1 <= 0)
                 {
                     Console.WriteLine("P2 won");
                 }
-                if(HP2 == 0)
+                if(HP2 <= 0)
                 {
                     Console.WriteLine("P1 won");
                 }
