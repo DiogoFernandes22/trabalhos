@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Blade of Osiris";
+            string rarity = "Pretty Rare";
+            string damage = "Ouch-Super Ouch";
+            string description = "A blade blessed by Osiris known to give it´s user a great power " +
+                "but also send them down a path to madness";
+            string targetclass = "Anything that moves";
+            string hold = "One Handed ";
+            Console.WriteLine("Name:"+name);
+            Console.WriteLine("Rarity:" + rarity);
+            Console.WriteLine("Damage:" + damage);
+            Console.WriteLine("Description:" + description);
+            Console.WriteLine("Target:" + targetclass);
+            Console.WriteLine("Hold:" + hold);
+
+
+        }
+    }
+}

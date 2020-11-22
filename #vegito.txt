@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int P1attack = 100;
+            int P1defense = 60;
+            int P1intellect = 80;
+
+            int P2attack = 60;
+            int P2defense = 80;
+            int P2intellect = 110;
+
+            int fusionAttack = (P1attack + P2attack) / 2;
+            int fusionDefense = (P1defense + P2defense) / 2;
+            int fusionIntellect = (P1intellect + P2intellect) / 2;
+
+            Console.WriteLine(fusionAttack);
+            Console.WriteLine(fusionDefense);
+            Console.WriteLine(fusionIntellect);
+
+
+
+        }
+    }
+}

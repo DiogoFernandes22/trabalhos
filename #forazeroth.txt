@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nickname = "Frost Hammer";
+            string race = "orc";
+            string faction = "Horde";
+            string type = "Warrior";
+            int level = 62;
+            char gender = 'M';
+            
+            Console.WriteLine(" Name:" + nickname);
+            Console.WriteLine(" Gender:" + gender);
+            Console.WriteLine(" Faction:" + faction);
+            Console.WriteLine(" Class:" + type);
+            Console.WriteLine(" Level:" + level);
+
+
+
+        }
+    }
+}

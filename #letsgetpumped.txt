@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int attack = 87;
+            int powerUp = (50 * 87) / 100;
+            int totalPower = attack + powerUp;
+            Console.WriteLine(attack);
+            Console.WriteLine("+PowerUp:" + totalPower);
+
+
+
+        }
+    }
+}

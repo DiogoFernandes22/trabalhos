@@ -1,0 +1,17 @@
+using System;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int HP = 50;
+            int Blow = 50;
+            int end  = HP - Blow;
+            Console.WriteLine("HP =" + end );
+            Console.WriteLine("gg");
+
+        }
+    }
+}
