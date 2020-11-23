@@ -16,7 +16,7 @@ namespace ConsoleApp24
             int difx = P1posX - P2posX;
             int dify = P1posY - P2posY;
 
-            float dist = ((difx * difx) * (dify * dify));
+            float dist = ((difx * difx) + (dify * dify));
 
             if(dist < 20)
             {
