@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int players = 20;
+            for (int i = 0; i <= players; i++)
+            {
+                int level = r.Next(21);
+                int resul = level / 2;
+                int rest = level - (resul * 2);
+                if (rest <= 0)
+                {
+                    Console.WriteLine(level);
+                    Console.WriteLine("position"+i);
+
+                }
+
+
+            }
+
+        }
+    }
+}
