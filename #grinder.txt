@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp27
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int bank = r.Next(1000, 100001);
+            int creature = r.Next(35, 66);
+            int kills = bank / creature;
+
+            if(kills > 10000)
+            {
+                Console.WriteLine("Grinder");
+               
+            }
+            Console.WriteLine(kills);
+        }
+    }
+}
