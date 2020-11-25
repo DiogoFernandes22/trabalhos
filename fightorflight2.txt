@@ -1,0 +1,64 @@
+using System;
+
+namespace ConsoleApp27
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int P1posX = r.Next(501);
+            int P1posY = r.Next(501);
+
+            int P2posX = r.Next(501);
+            int P2posY = r.Next(501);
+
+            if(P2posX > P1posX && P2posY > P1posY)
+            {
+                int difX = P2posX - P1posX;
+                int difY = P2posY - P1posY;
+
+                int dif = ((difX * difX) + (difY * difY));
+                if (dif < 20)
+                {
+                    P2posX = P2posX + 1;
+                }
+            }
+            else
+            {
+                int difX = P1posX - P2posX;
+                int difY = P1posY - P2posY;
+
+                int dif = ((difX * difX) + (difY * difY));
+                if (dif < 20)
+                {
+                    P2posX = P2posX + 1;
+                }
+            }
+
+            if (P2posX > P1posX && P2posY < P1posY)
+            {
+                int difX = P2posX - P1posX;
+                int difY = P1posY - P2posY;
+
+                int dif = ((difX * difX) + (difY * difY));
+                if (dif < 20)
+                {
+                    P2posX = P2posX + 1;
+                }
+            }
+            else
+            {
+                int difX = P1posX - P2posX;
+                int difY = P2posY - P1posY;
+
+                int dif = ((difX * difX) + (difY * difY));
+                if (dif < 20)
+                {
+                    P2posX = P2posX + 1;
+                }
+            }
+           
+        }
+    }
+}
