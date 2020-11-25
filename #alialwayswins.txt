@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int HP1 = 100;
+            int HP2 = 100;
+
+            int P1Attack1 = r.Next(51);
+            int P1Atacck2 = r.Next(51);
+
+            int P2Attack1 = r.Next(51);
+            int P2Attack2 = r.Next(51);
+            bool KO = true;
+
+            while (!KO)
+            {
+                int decisionP1 = r.Next(1, 4);
+                int decisionP2 = r.Next(1, 4);
+                if(decisionP1 != 3 && decisionP2 != 3)
+                {
+                    decisionP1 = decisionP1 == 0 ? P1Attack1 : P1Attack2;
+                    decisionP2 = decisionP2 == 0 ? P2Attack1 : P2Attack2;
+                    HP1 = HP1 - decisionP2;
+                    HP2 = HP2 - decisionP1;
+                }
+
+                if(HP1 <= 0 || HP2 <= 0)
+                {
+                    KO = true;
+                }
+
+            }
+         }
+    }
+}
