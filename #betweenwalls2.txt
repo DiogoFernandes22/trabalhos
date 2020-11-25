@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int N1 = r.Next(101);
+            int N2 = r.Next(101);
+           if(N1 > N2)
+            {
+                for(int i = N2; i <= N1; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                for(int i = N2; i >= N1; i--)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            }
+            
+        }
+    }
+
