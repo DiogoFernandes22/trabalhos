@@ -1,0 +1,52 @@
+using System;
+
+namespace ConsoleApp24
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int P1posX = r.Next(501);
+            int P1posY = r.Next(501);
+
+            int P2posX = r.Next(501);
+            int P2posY = r.Next(501);
+
+            int P3posX = r.Next(501);
+            int P3posY = r.Next(501);
+
+            int difx12 = P2posX - P1posX;
+            int dify12 = P2posY - P1posY;
+
+            float dist12 = ((difx12 * difx12) * (dify12 * dify12));
+
+            int difx23 = P3posX - P2posX;
+            int dify23 = P3posY - P2posY;
+
+            float dist23 = ((difx23 * difx23) * (dify23 * dify23));
+
+            int difx13 = P3posX - P1posX;
+            int dify13 = P3posY - P1posY;
+
+            float dist13 = ((difx13 * difx13) * (dify13 * dify13));
+
+            if(dist12 < dist13 && dist12 < dist23)
+            {
+                Console.WriteLine("P1 and P2 are closest");
+            }
+            if (dist13 < dist23 && dist13 < dist12)
+            {
+                Console.WriteLine("P1 and P3 are closest");
+            }
+            if (dist23 < dist13 && dist23 < dist12)
+            {
+                Console.WriteLine("P2 and P3 are closest");
+            }
+
+
+
+        }
+
+    }
+}
